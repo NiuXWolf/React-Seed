@@ -1,20 +1,5 @@
-
-import fs from 'fs';
-import colors from 'colors';
-import cheerio from 'cheerio';
-
-fs.readFile('static/index.html', 'utf8', (err, markup) => {
-  if (err) {
-    return console.log(err);
-  }
-
-  const $ = cheerio.load(markup);
-
-  fs.writeFile('dist/index.html', $.html(), 'utf8', function (err) {
-    if (err) {
-      return console.log(err);
-    }
-  });
-
-  console.log('index.html written to /dist'.green);
-});
+import path from 'path';
+import copyDir from 'copy-dir';
+// copyDir('static/fonts', 'dist/fonts');
+// copyDir('static/css', 'dist/css');
+copyDir('static','dist');
