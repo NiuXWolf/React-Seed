@@ -42,6 +42,7 @@
     "react-transform-hmr": "1.0.1",
     "redbox-react": "1.2.0",
     "rimraf": "2.5.0",
+    "semantic-ui-css":"2.1.8",
     "watch": "0.17.1",
     "webpack": "1.12.11",
     "webpack-dev-middleware": "1.4.0",
